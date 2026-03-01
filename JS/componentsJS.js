@@ -12,7 +12,8 @@ class AddHeaderComponent extends HTMLElement{
     connectedCallback(){
         this.innerHTML = '<div class="home"><a class="home-anchor" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Home</a></div>'+
                            '<p class="logo">Qool</p>'+
-   '<div class="infosection"><a class="contactus-anchor" href="contactus.html">Kontakta oss</a></div>';
+   '<div class="infosection"><a class="contactus-anchor" href="contactus.html">Kontakta oss</a>'+
+   '<a class="contactus-anchor" href="aboutMe.html">Om oss</a></div>';
     }
 }
 

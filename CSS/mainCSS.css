@@ -44,21 +44,21 @@
 }
 .infosection{
   grid-area: infosection;
+  text-align: right;
   padding: 0 1rem 0 0;
 }
 .home-anchor{
   text-decoration: none;
   font-size: 24px;
 }
-.contactus-anchor{
-  text-align: right;
+.contactus-anchor{  
   text-decoration: none;
 }
  .hero {
   height: fit-content;
   margin: 0px;
   padding: 0.1rem;
-  border:solid 2px #025202;
+  border:solid 1px #376837;
   border-radius: 1rem;
 }
 .hero-img{
@@ -142,6 +142,40 @@ input[type=submit]:hover {
   margin: 1rem 0.5rem;
   cursor: pointer;
   border-radius: 1rem;
+}
+.aboutMe-main{
+  display: grid;
+  grid-template-areas: "aboutMe-main-col-0 aboutMe-main-col-1";
+  grid-template-columns: 1fr 3fr;
+  gap: 12px;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: solid 2px gray;
+  border-radius: 0.5rem;
+}
+.aboutMe-main-col-0 {
+   grid-area: aboutMe-main-col-0;
+   border-right: solid 1px gray;
+   text-align: center;
+   padding-top: 2rem;
+}
+/* .aboutMe-main-col-0> h3{
+  text-align: left;
+  margin-bottom: 2rem;  
+} */
+.aboutMe-main-col-0> section{
+  margin-top: 1rem;
+  
+}
+.aboutMe-main-col-1 {
+  grid-area: aboutMe-main-col-1;
+  min-height: 100vh;
+  font-size: 18px;
+  font-family:"BrandonGrotesque", serif;
+    /* text-shadow: 1px 1px 2px #131311; */
+  }
+.aboutMe-main-col-1> h2{
+  text-align: center;
 }
 .footer{
   margin: 0.1rem;
