@@ -11,13 +11,16 @@
         <label for="fname"><span class="star">&#8277;</span> First name:</label>
         <input type="text" id="fname" name="fname" required pattern="[a-z A-Z]+" 
         placeholder="First name.."
-        onmouseover="customizedTitle('title-new','First name must contain alphabet characters only.')">
+        onmouseover="customizedTitle('title-new','First name must contain alphabet characters only.')"
+         onmouseleave = "hideTitle('title-new')">
         <label for="lname"><span class="star">&#8277;</span> Last name:</label>
         <input type="text" id="lname" name="lname" required pattern="[a-z A-Z]+" placeholder="Last name.."
-        onmouseover="customizedTitle('title-new','Last name must contain alphabet characters only.')">
+        onmouseover="customizedTitle('title-new','Last name must contain alphabet characters only.')" 
+        onmouseleave = "hideTitle('title-new')">
         <label for="email"><span class="star">&#8277;</span> Enter your email:</label>
         <input type="email" id="email" name="email" required placeholder="email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-        onmouseover="customizedTitle('title-new', 'Email must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters.')">
+        onmouseover="customizedTitle('title-new', 'Email must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters.')"
+        onmouseleave = "hideTitle('title-new')">
         <input class="btn" type="submit" value="Submit" onclick="hideTitle('title-new')">
     </form>
 </main>

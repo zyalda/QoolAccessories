@@ -20,12 +20,12 @@ class AddHeaderComponent extends HTMLElement{
 customElements.define('my-header', AddHeaderComponent);
 
 function customizedTitle(titleID, title) {
-    document.getElementById(titleID).style.display = "inline-block";
+    document.getElementById(titleID).style.visibility = 'visible';
+    document.getElementById(titleID).style.opacity = "1.0";
     document.getElementById(titleID).innerHTML = title;
 }
-function hideTitle(titleid){
-     document.getElementById(titleid).style.display = "none";
-     document.getElementById(titleid).style.top = 0;
+function hideTitle(titleId){
+     document.getElementById(titleId).style.opacity = "0.0";
 }
 
 $(document).ready(function(){
