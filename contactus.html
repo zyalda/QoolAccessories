@@ -1,0 +1,28 @@
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <head>
+    <title>Contact us</title>
+ </head>
+ <body>
+<my-header class="header"></my-header>
+ <container class="container">
+  <main class="contactus-main">
+    <form action="/page.php">
+       <p id="title-new"></p>
+        <label for="fname"><span class="star">&#8277;</span> First name:</label>
+        <input type="text" id="fname" name="fname" required pattern="[a-z A-Z]+" 
+        placeholder="First name.."
+        onmouseover="customizedTitle('title-new','First name must contain alphabet characters only.')">
+        <label for="lname"><span class="star">&#8277;</span> Last name:</label>
+        <input type="text" id="lname" name="lname" required pattern="[a-z A-Z]+" placeholder="Last name.."
+        onmouseover="customizedTitle('title-new','Last name must contain alphabet characters only.')">
+        <label for="email"><span class="star">&#8277;</span> Enter your email:</label>
+        <input type="email" id="email" name="email" required placeholder="email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+        onmouseover="customizedTitle('title-new', 'Email must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters.')">
+        <input class="btn" type="submit" value="Submit" onclick="hideTitle('title-new')">
+    </form>
+</main>
+<socialMedia class="socialmedia"></socialMedia>
+<footer class="footer"></footer>
+</container>
+<script src="./JS/componentsJS.js"></script>
+ </body>

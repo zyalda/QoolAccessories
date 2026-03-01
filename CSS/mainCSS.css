@@ -1,0 +1,156 @@
+ @import url("commonCss.css");
+.container {
+  display: grid;
+  grid-template-rows: auto 3fr auto;
+  background-color: #eee4d9;
+  padding: 1px;
+  min-height: 100vh;
+}
+/*** header, main and footer ***/
+.header{
+  top: 0;
+  position: sticky;
+  margin: 0 0.1rem;
+  padding: 0.1rem 0;
+  background: #025202;
+  display: grid;
+  grid-template-areas: "home logo infosection";
+  grid-template-columns: repeat(3, 1fr);
+  height: fit-content;
+  border-radius: 0.5rem;
+}
+.logo {  
+  grid-area: logo;
+  text-align: center;
+  font-Size:48px;
+  margin: 0px;
+  padding: 0px;
+}
+.logo, .contactus-anchor, .home-anchor{
+  fill:#ffd700;
+  font-family:Vijaya;
+  color:#ffd700;
+  border-color:Black;
+  font-style:italic;
+  text-shadow: 1px 1px 3px black;
+}
+.home, .infosection{
+  display: grid;
+  align-content: center;
+}
+.home{
+  grid-area: home;
+  padding: 0 0 0 1rem;
+}
+.infosection{
+  grid-area: infosection;
+  padding: 0 1rem 0 0;
+}
+.home-anchor{
+  text-decoration: none;
+  font-size: 24px;
+}
+.contactus-anchor{
+  text-align: right;
+  text-decoration: none;
+}
+ .hero {
+  height: fit-content;
+  margin: 0px;
+  padding: 0.1rem;
+  border:solid 2px #025202;
+  border-radius: 1rem;
+}
+.hero-img{
+  width: 100%;
+  border-radius: 1rem;
+}
+.main{
+  display: grid;
+    grid-template-areas:
+    "main-col-0 main-col-1 main-col-2";
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+}
+.main > .main-col-0, .main-col-1, .main-col-2{
+  margin: 0.5rem;
+    border: solid 2px gray;
+    border-radius: 1rem;
+    text-align: center;
+}
+.main-col-0 {
+   grid-area: main-col-0;
+}
+.main-col-1 {
+    grid-area: main-col-1;
+}
+.main-col-2 {
+    grid-area: main-col-2;
+  }
+  .contactus-main{
+ min-height: 100vh;
+}
+  form {
+  border-radius: 5px;
+  padding: 20px;
+}
+label {
+  display: block;
+}
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid gray;
+  background-color: #eee4d9;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: fit-content;
+}
+.star{
+  color: red;
+}
+ #title-new{
+    display: none;
+    margin: 0px;
+    color: #bcb380;
+    background-color: rgb(34, 36, 34);
+    border: 2px solid #ffd700;
+    padding: 0.5rem;
+    vertical-align: middle;
+    border-radius: 0.3rem;
+    z-index: 1;
+ }
+input[type=submit]:hover {
+  background-color: gray;
+}
+  .socialmedia{
+ text-align: center;
+  }
+ button, .btn{
+  background-color:Black;
+  border-color: #ffd700;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.footer{
+  margin: 0.1rem;
+}
+.footer section{
+    margin: 0.2rem;
+    border-top: solid;
+    border-color: #b4acac;
+    border-top-width: 1px;
+    text-align: center;
+    box-shadow: 10px 10px 5px #888888;
+}

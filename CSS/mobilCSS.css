@@ -1,0 +1,23 @@
+@media screen and (max-width: 10240px){
+@import url("commonCss.css");
+}
+@media screen and (max-width: 800px){
+@import url("commonCss.css");  
+}
+@media screen and (max-width: 690px){
+@import url("commonCss.css");  
+}
+@media screen and (max-width: 600px) {
+@import url("commonCss.css");
+}
+
+@media screen and (max-width: 430px) {
+@import url("commonCss.css");
+.container {
+  background-color: #eee4d9;
+}
+
+}
+@media screen and (max-width: 414px) {
+@import url("commonCss.css");
+}
