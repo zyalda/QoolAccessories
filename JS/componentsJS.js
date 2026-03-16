@@ -25,14 +25,20 @@ function AddProductsComponent(start) {
     }
     connectedCallback(){
         const price = 800;
-    jQuery.get('produkterTxt.txt', (data) => {
-    const productArray = data.split("\r\n");
+        const products = ["produkter/ARM02701.JPG","produkter/ARM02702.JPG","produkter/ARM02703.JPG",
+                        "produkter/ARM02705.JPG","produkter/ARM02706.JPG","produkter/ARM02708.JPG",
+                        "produkter/ARM02709.JPG","produkter/ARM02710.JPG","produkter/ARM02711.JPG",
+                        "produkter/ARM02714.JPG","produkter/ARM02719.JPG","produkter/ARM02720.JPG",
+                        "produkter/HALS02701.JPG","produkter/IMG_1335.JPG","produkter/IMG_1545.JPG",
+                        "produkter/IMG_4314.JPG","produkter/BYVF0822.JPG","produkter/FRKW2469.JPG",
+                        "produkter/FRKW1286.JPG","produkter/FRKW6601.JPG","produkter/FRKW1288.JPG",
+                        "produkter/FRKW1295.JPG","produkter/QQWX1606.JPG","produkter/FRKW1562.JPG",
+                        "produkter/FRKW1563.PNG"];
 
-    for (let index = start; index < productArray.length; index+=3) {
+    for (let index = start; index < products.length; index+=3) {
        this.innerHTML += '<div class="pro"><a target="_new" href="#">'+
-        '<img class="item-'+index+'" src="./' + productArray[index] + '" alt="purse"/><p>Pris: '+price+'kr</p></a></div>';
+        '<img class="item-'+index+'" src="./' + products[index] + '" alt="purse"/><p>Pris: '+price+'kr</p></a></div>';
         }
-        });
         }
     }
 }
