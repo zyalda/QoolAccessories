@@ -16,8 +16,31 @@ class AddHeaderComponent extends HTMLElement{
    '<a class="contactus-anchor" href="aboutMe.html">Om oss</a></div>';
     }
 }
-
 customElements.define('my-header', AddHeaderComponent);
+
+function AddProductsComponent(start) {
+  return class extends HTMLElement {
+    constructor() {
+      super();
+    }
+    connectedCallback(){
+        const price = 800;
+    jQuery.get('produkterTxt.txt', (data) => {
+    const productArray = data.split("\r\n");
+
+    for (let index = start; index < productArray.length; index+=3) {
+       this.innerHTML += '<div class="pro"><a target="_new" href="#">'+
+        '<img class="item-'+index+'" src="' + productArray[index] + '" alt="purse"/><p>Pris: '+price+'kr</p></a></div>';
+        }
+        });
+        }
+    }
+}
+
+customElements.define('first-section', AddProductsComponent(0));
+customElements.define('second-section', AddProductsComponent(1));
+customElements.define('third-section', AddProductsComponent(2));
+
 
 function customizedTitle(titleID, title) {
     document.getElementById(titleID).style.visibility = 'visible';

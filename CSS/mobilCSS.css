@@ -1,8 +1,17 @@
-@media screen and (max-width: 10240px){
+@media (min-width: 801px)and (max-width: 10240px){
 @import url("commonCss.css");
 }
 @media screen and (max-width: 800px){
 @import url("commonCss.css");  
+.main{
+      display: grid;
+    grid-template-areas:
+        "main-col-0"
+        "main-col-1"
+        "main-col-2";
+    gap: 20px;
+    grid-template-columns: auto;
+}
 }
 @media screen and (max-width: 690px){
 @import url("commonCss.css");  

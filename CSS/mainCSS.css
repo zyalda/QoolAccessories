@@ -87,7 +87,11 @@
 .main-col-2 {
     grid-area: main-col-2;
   }
-  .contactus-main{
+  .pro > a > img{
+    width: 100px;
+    height: 100px;
+  }
+.contactus-main{
  min-height: 100vh;
 }
   form {
@@ -129,8 +133,11 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: gray;
 }
-  .socialmedia{
- text-align: center;
+.socialmedia{
+  text-align: center;
+  }
+  .socialmedia a{
+    color: black;
   }
  button, .btn{
   background-color:Black;
@@ -161,10 +168,6 @@ input[type=submit]:hover {
    text-align: center;
    padding-top: 2rem;
 }
-/* .aboutMe-main-col-0> h3{
-  text-align: left;
-  margin-bottom: 2rem;  
-} */
 .aboutMe-main-col-0> section{
   margin-top: 1rem;
   
@@ -174,7 +177,6 @@ input[type=submit]:hover {
   min-height: 100vh;
   font-size: 18px;
   font-family:"BrandonGrotesque", serif;
-    /* text-shadow: 1px 1px 2px #131311; */
   }
 .aboutMe-main-col-1> h2{
   text-align: center;
