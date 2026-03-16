@@ -30,7 +30,7 @@ function AddProductsComponent(start) {
 
     for (let index = start; index < productArray.length; index+=3) {
        this.innerHTML += '<div class="pro"><a target="_new" href="#">'+
-        '<img class="item-'+index+'" src="' + productArray[index] + '" alt="purse"/><p>Pris: '+price+'kr</p></a></div>';
+        '<img class="item-'+index+'" src="./' + productArray[index] + '" alt="purse"/><p>Pris: '+price+'kr</p></a></div>';
         }
         });
         }
