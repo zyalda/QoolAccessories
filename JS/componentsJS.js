@@ -41,7 +41,7 @@ function AddProductsComponent(start) {
         //                 "produkter/FRKW1295.JPG","produkter/QQWX1606.JPG","produkter/FRKW1562.JPG",
         //                 "produkter/FRKW1563.PNG"];
 loadprodukterTxt().then((data) => {
-    const productsArray = data.split("\r\n");
+    const productsArray = data.split(" ");
     for (let index = start; index < productsArray.length; index+=3) {
        this.innerHTML += '<div class="pro"><a target="_new" href="#">'+
         '<img class="item-'+index+'" src="./' + productsArray[index] + '" alt="purse"/></a><div><p>Pris: '+price+'kr</p></div></div>';
