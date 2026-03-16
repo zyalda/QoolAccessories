@@ -87,6 +87,16 @@
 .main-col-2 {
     grid-area: main-col-2;
   }
+.pro{
+  display: grid;
+  margin: 0.5rem;
+  grid-template-columns: repeat(2, 2fr);
+}
+  .pro div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .pro > a > img{
     width: 100px;
     height: 100px;
