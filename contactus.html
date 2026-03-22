@@ -21,6 +21,13 @@
         <input type="email" id="email" name="email" required placeholder="email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
         onmouseover="customizedTitle('title-new', 'Email must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters.')"
         onmouseleave = "hideTitle('title-new')">
+        <label for="subject">Meddelande</label>
+        <textarea id="subject" name="subject" placeholder="Meddelande ..."></textarea>
+        <!-- FormSubmit-inställningar -->
+        <!-- Localhost med Live Server -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" value="http://127.0.0.1:5501/thanks.html">
         <input class="btn" type="submit" value="Submit" onclick="hideTitle('title-new')">
     </form>
 </main>

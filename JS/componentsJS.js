@@ -10,6 +10,17 @@ class AddAboutMeArticleComponent extends HTMLElement {
 }
 customElements.define('my-article', AddAboutMeArticleComponent);
 
+// //My weather section.
+class AddweatherComponent extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML ='<input type="text" id="city" name="city" required pattern="[a-z A-Z]+"'+
+                        'onfocus="myOnfocus(this)" value="Stockholm"/>'+
+                        '<button id="getWeather-btn" onclick="GetTheWeather()">Vädret</button>'+
+                        '<div id="weatherInfo"></div>';
+    }
+}
+customElements.define('my-weather', AddweatherComponent);
+
 class AddHeaderComponent extends HTMLElement{
     connectedCallback(){
         this.innerHTML = '<div class="home"><a class="home-anchor" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Home</a></div>'+
@@ -37,8 +48,10 @@ function AddProductsComponent(start) {
         loadprodukterTxt().then((data) => {
         const productsArray = data.split(",");
         for (let index = start; index < productsArray.length; index+=3) {
-        this.innerHTML += '<div class="pro"><a target="_new" href="#">'+
-            '<img class="item-'+index+'" src="./' + productsArray[index] + '" alt="purse"/></a><div><p>Pris: '+price+'kr</p></div></div>';
+        this.innerHTML += '<div class="item"><a target="_new" href="product.html">'+
+                        '<img class="item-'+index+'" src="./' + productsArray[index] + '" alt="purse"/>'+
+                        '<div><p>Pris: '+price+'kr</p></div></a>'+
+                        '<div><button id="btn-'+index+'" class="buy-btn">KÖP Nu</button></div></div>';
             }
         });
     }
