@@ -6,7 +6,7 @@
   padding: 1px;
   min-height: 100vh;
 }
-/*** header, main and footer ***/
+/*** header ***/
 .header{
   top: 0;
   position: sticky;
@@ -54,7 +54,9 @@
 .contactus-anchor{  
   text-decoration: none;
 }
- .hero {
+/*** End of header ***/
+/*** Container hero section ***/
+.hero {
   height: fit-content;
   margin: 0px;
   padding: 0.1rem;
@@ -67,16 +69,15 @@
 }
 .main{
   display: grid;
-    grid-template-areas:
-    "main-col-0 main-col-1 main-col-2";
+  grid-template-areas: "main-col-0 main-col-1 main-col-2";
   grid-template-columns: repeat(3, 1fr);
   height: 100%;
 }
 .main > .main-col-0, .main-col-1, .main-col-2{
   margin: 0.5rem;
-    border: solid 2px gray;
-    border-radius: 1rem;
-    text-align: center;
+  border: solid 2px gray;
+  border-radius: 1rem;
+  text-align: center;
 }
 .main-col-0 {
    grid-area: main-col-0;
@@ -190,6 +191,9 @@ input[type=submit]:hover {
   }
 .aboutMe-main-col-1> h2{
   text-align: center;
+}
+.aboutMe-main-col-1 div{
+  margin: 0 0 1em 0;
 }
 .footer{
   margin: 0.1rem;

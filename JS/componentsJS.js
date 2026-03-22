@@ -1,12 +1,14 @@
 
-class AddArticleComponent extends HTMLElement {
+class AddAboutMeArticleComponent extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = 'Jag är en person med genuint intresse för och kunskap om utveckling och problemlösning och finner det mycket spännande.'+
-        'Aktiv och gillar att röra på mig och träna. Bra på färg och former där skapa hjälper mig med CSS och att skpa mina smycken och väskor jag desinar och utför.'+
-        'En familj människa som älskar barn, men gillar utmaningar genom teknik och tittar på som är nytt i branchen.';
+        this.innerHTML = '<h2>About us</h2>'+
+        '<div>Qool a small private project to create a daily, simple accessories yet elegant and fit all occusions.'+
+        ' With my passion for color, forms and a unik version to create my own designs of purses and accessories.'+
+        '</div>Inspired by people and enviroments around me, I represent here my collections available for you to complete your look'+
+        ' and your home decorations. <div>My purses made of pearls can be ues as decoration as well as usual purse.</div>';
     }
 }
-customElements.define('my-article', AddArticleComponent);
+customElements.define('my-article', AddAboutMeArticleComponent);
 
 class AddHeaderComponent extends HTMLElement{
     connectedCallback(){
